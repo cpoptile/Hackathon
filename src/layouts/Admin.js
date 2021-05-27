@@ -75,10 +75,10 @@ function Admin(props) {
         </Switch>
         <Footer fluid />
       </div>
-      <FixedPlugin
+      {/* <FixedPlugin
         bgColor={backgroundColor}
         handleColorClick={handleColorClick}
-      />
+      /> */}
     </div>
   );
 }

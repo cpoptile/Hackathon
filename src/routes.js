@@ -54,17 +54,17 @@ var dashRoutes = [
     layout: "/admin",
   },
   {
+    path: "/extended-tables",
+    name: "Recent Transactions",
+    icon: "files_paper",
+    component: TableList,
+    layout: "/admin",
+  },
+  {
     path: "/user-page",
     name: "User Profile",
     icon: "users_single-02",
     component: UserPage,
-    layout: "/admin",
-  },
-  {
-    path: "/extended-tables",
-    name: "Table List",
-    icon: "files_paper",
-    component: TableList,
     layout: "/admin",
   },
   {
@@ -74,13 +74,13 @@ var dashRoutes = [
     component: Typography,
     layout: "/admin",
   },
-  {
-    pro: true,
-    path: "/upgrade",
-    name: "Upgrade to PRO",
-    icon: "objects_spaceship",
-    component: Upgrade,
-    layout: "/admin",
-  },
+  // {
+  //   pro: true,
+  //   path: "/upgrade",
+  //   name: "Upgrade to PRO",
+  //   icon: "objects_spaceship",
+  //   component: Upgrade,
+  //   layout: "/admin",
+  // },
 ];
 export default dashRoutes;

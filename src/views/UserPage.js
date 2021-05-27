@@ -39,7 +39,7 @@ function User() {
       <PanelHeader size="sm" />
       <div className="content">
         <Row>
-          <Col md="8">
+          {/* <Col md="8">
             <Card>
               <CardHeader>
                 <h5 className="title">Edit Profile</h5>
@@ -157,7 +157,7 @@ function User() {
                 </Form>
               </CardBody>
             </Card>
-          </Col>
+          </Col> */}
           <Col md="4">
             <Card className="card-user">
               <div className="image">
