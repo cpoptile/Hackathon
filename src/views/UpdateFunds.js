@@ -20,7 +20,7 @@ import PanelHeader from "components/PanelHeader/PanelHeader.js";
 
 
 function UpdatePage() {
-    const [balance, setBalance] = useState("")
+    const [balance, setBalance] = useState("0")
     const [amount, setAmount] = useState("")
     const [display, setDisplay] = useState(false);
 
@@ -29,12 +29,13 @@ function UpdatePage() {
     function addFunds(e){
         e.preventDefault()
         setBalance(balance + amount)
-
+        // setBalance(toString(parseInt(balance) + parseInt(amount)))
     }
     
     function subtractFunds(e){
         e.preventDefault()
         setBalance(balance - amount)
+        // setBalance(parseInt(balance) + parseInt(amount))
     }
 
   return (
@@ -47,7 +48,7 @@ function UpdatePage() {
               <h1 className = "total-label"> Current Balance </h1>
             </CardHeader>
             <CardBody>
-              <h2 className = "total-amount">$700.00</h2>
+              <h2 className = "total-amount">${balance}</h2>
             </CardBody>
           </Card>
         </Row>

@@ -48,6 +48,9 @@ function RegularTables() {
                 <Table responsive>
                   <thead className="text-primary">
                     <tr>
+                      <th>yes</th>
+                    </tr>
+                    <tr>
                       {thead.map((prop, key) => {
                         if (key === thead.length - 1)
                           return (

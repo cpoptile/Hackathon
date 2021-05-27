@@ -198,7 +198,7 @@ function Dashboard() {
                 </CardFooter>
               </Card>
           </Col>
-          <Col md = {6}></Col>
+          <Col md = {4}></Col>
           {/* <Col xs={12} md={4}>
             <Card className="card-chart">
               <CardHeader>
@@ -389,10 +389,10 @@ function Dashboard() {
                 <Table responsive>
                   <thead className="text-primary">
                     <tr>
-                      <th>Name</th>
-                      <th>Country</th>
-                      <th>City</th>
-                      <th className="text-right">Salary</th>
+                      <th>Date</th>
+                      <th>Time</th>
+                      <th>Transaction</th>
+                      <th className="text-right">Total</th>
                     </tr>
                   </thead>
                   <tbody>
