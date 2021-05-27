@@ -23,6 +23,7 @@ import TableList from "views/TableList.js";
 import Maps from "views/Maps.js";
 import Upgrade from "views/Upgrade.js";
 import UserPage from "views/UserPage.js";
+import UpdateFunds from "views/UpdateFunds.js";
 
 var dashRoutes = [
   {
@@ -58,6 +59,13 @@ var dashRoutes = [
     name: "Notifications - WILL DELETE LATER",
     icon: "ui-1_bell-53",
     component: Notifications,
+    layout: "/admin",
+  },
+  {
+    path: "/update-funds",
+    name: "Funds - WILL DELETE LATER",
+    icon: "ui-1_bell-53",
+    component: UpdateFunds,
     layout: "/admin",
   },
   // {
