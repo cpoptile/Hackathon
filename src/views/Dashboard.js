@@ -104,7 +104,7 @@ function Dashboard() {
               </CardFooter>
             </Card>
           </Col> */}
-          <Col xs={12} md={4}>
+          {/* <Col xs={12} md={4}>
             <Card className="card-chart">
               <CardHeader>
                 <h5 className="card-category">2021 Sales</h5>
@@ -141,8 +141,9 @@ function Dashboard() {
                 </div>
               </CardFooter>
             </Card>
-          </Col>
-          <Col xs = {12} md = {4}>
+          </Col> */}
+          <Col></Col>
+          <Col xs = {12} md = {5} align = "center">
             <Card className = "Progress Bar" >
                 <CircularProgressbar
                     value={90}
@@ -177,6 +178,7 @@ function Dashboard() {
                 </CardFooter>
               </Card>
           </Col>
+          <Col></Col>
           {/* <Col xs={12} md={4}>
             <Card className="card-chart">
               <CardHeader>
@@ -356,8 +358,8 @@ function Dashboard() {
               </CardFooter>
             </Card>
           </Col> */}
-          
-          <Col xs={12} md={6}>
+          <Col></Col>
+          <Col xs={12} md={12} >
             <Card>
               <CardHeader>
                 <h5 className="card-category">Transcation History</h5>
@@ -409,6 +411,7 @@ function Dashboard() {
               </CardBody>
             </Card>
           </Col>
+          <Col></Col>
         </Row>
       </div>
     </>
