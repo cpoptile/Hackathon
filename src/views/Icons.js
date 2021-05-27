@@ -36,8 +36,8 @@ function Icons() {
               <CardHeader>
                 <h5 className="title">Badges</h5>
                 <p className="category">
-                  Customized your profile by unlobking badges provided by amazing{" "}
-                  <a href="https://nucleoapp.com/?ref=1712">creators</a>
+                  Customized your profile by unlocking badges provided by amazing{" "}
+                  <a href="https://nucleoapp.com/?ref=1712">creators!</a>
                 </p>
               </CardHeader>
               <CardBody className="all-icons">
