@@ -9,11 +9,11 @@
         vertical-align: middle;
 
         &:not(.btn):not(.dropdown-item){
-            color: $white-color;
+            color: $black-color;
         }
 
         &.dropdown-item{
-            color: $default-color;
+            color: $black-color;
         }
     }
 
@@ -44,7 +44,7 @@
       .form-group-addon,
       .input-group-prepend .input-group-text,
       .input-group-append .input-group-text{
-        color: $white-color;
+        color: $black-color;
 
         i {
           opacity: 1;
@@ -53,10 +53,10 @@
 
       &.no-border{
         .form-control{
-          color: $white-color;
+          color: $black-color;
 
           @include placeholder(){
-            color: $white-color;
+            color: $black-color;
           };
         }
       }
@@ -166,7 +166,7 @@
 
             &.disabled{
                 opacity: .5;
-                color: $white-color;
+                color: $black-color;
             }
         }
 
@@ -176,7 +176,7 @@
         .nav-item .nav-link:not(.btn):active{
             background-color: $opacity-2;
             border-radius: $border-radius-small;
-            color: $white-color;
+            color: $black-color;
         }
     }
 

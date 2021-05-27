@@ -55,6 +55,16 @@ import {
 function Dashboard() {
   return (
     <>
+      {/* <Row>
+          <Card>
+            <CardHeader>
+              <h1 className = "total-label"> Current Balance </h1>
+            </CardHeader>
+            <CardBody>
+              <h2 className = "total-amount">$700.00</h2>
+            </CardBody>
+          </Card>
+        </Row> */}
       <PanelHeader
         size="lg"
         content={
@@ -65,6 +75,16 @@ function Dashboard() {
         }
       />
       <div className="content">
+        <Row>
+          <Card>
+            <CardHeader>
+              <h1 className = "total-label"> Current Balance </h1>
+            </CardHeader>
+            <CardBody>
+              <h2 className = "total-amount">$700.00</h2>
+            </CardBody>
+          </Card>
+        </Row>
         <Row>
           {/* <Col xs={12} md={4}> */}
             {/* <Card className="card-chart">

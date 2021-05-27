@@ -47,7 +47,7 @@ function DemoNavbar(props) {
     if (isOpen) {
       setColor("transparent");
     } else {
-      setColor("white");
+      setColor("dark");
     }
     setIsOpen(!isOpen);
   };
@@ -86,7 +86,7 @@ function DemoNavbar(props) {
   // function that adds color white/transparent to the navbar on resize (this is for the collapse)
   const updateColor = () => {
     if (window.innerWidth < 993 && isOpen) {
-      setColor("white");
+      setColor("black");
     } else {
       setColor("transparent");
     }
