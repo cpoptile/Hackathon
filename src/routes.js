@@ -60,13 +60,13 @@ var dashRoutes = [
     component: Notifications,
     layout: "/admin",
   },
-  {
-    path: "/maps",
-    name: "Maps - WILL DELETE LATER",
-    icon: "location_map-big",
-    component: Maps,
-    layout: "/admin",
-  },
+  // {
+  //   path: "/maps",
+  //   name: "Maps - WILL DELETE LATER",
+  //   icon: "location_map-big",
+  //   component: Maps,
+  //   layout: "/admin",
+  // },
   {
     path: "/icons",
     name: "Icons - WILL DELETE LATER",
