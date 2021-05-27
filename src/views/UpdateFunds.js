@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 
 // reactstrap components
 import {
@@ -7,6 +7,10 @@ import {
   CardHeader,
   CardTitle,
   Table,
+  FormGroup,
+  Form,
+  Input,
+  Button,
   Row,
   Col,
 } from "reactstrap";
@@ -15,8 +19,24 @@ import {
 import PanelHeader from "components/PanelHeader/PanelHeader.js";
 
 
-
 function UpdatePage() {
+    const [balance, setBalance] = useState("")
+    const [amount, setAmount] = useState("")
+    const [display, setDisplay] = useState(false);
+
+    // const customData = require('./customData.json');
+
+    function addFunds(e){
+        e.preventDefault()
+        setBalance(balance + amount)
+
+    }
+    
+    function subtractFunds(e){
+        e.preventDefault()
+        setBalance(balance - amount)
+    }
+
   return (
     <>
     <PanelHeader size="sm" />
@@ -31,9 +51,26 @@ function UpdatePage() {
             </CardBody>
           </Card>
         </Row>
-        <button>DEPOSIT</button>
-        <button>WITHDRAW</button>
-      
+        <Row>
+            <Col className="pl-1" md="4">
+                <FormGroup>
+                    <label>Enter Amount</label>
+                    <Input placeholder="$0.00" type="number" value = {amount} onClick ={() => setDisplay(!display)} onChange={e => setAmount(e.target.value)} required />
+                </FormGroup>
+            </Col>
+        </Row>
+        <Row>
+            <Col>
+                <Card>
+                <Button color="info" type="button" onClick ={addFunds} >DEPOSIT</Button>
+                </Card>
+            </Col>
+            <Col>
+                <Card>
+                    <Button color="info" type="button" onClick ={subtractFunds} >WITHDRAW</Button>
+                </Card>
+            </Col>
+        </Row>      
     </div>
   </>
   );
