@@ -39,32 +39,34 @@ const tasks = [
 // // // table head data and table body data for Tables view
 // #############################
 
-const thead = ["Name", "Country", "City", "Salary"];
+const thead = ["Date", "Time", "Transaction", "Total"];
 const tbody = [
   {
     className: "table-success",
-    data: ["Dakota Rice", "Niger", "Oud-Turnhout", "$36,738"],
+    data: ["05/28/21", "00:00:00", "+$10.00", "$21.00"],
   },
   {
     className: "",
-    data: ["Minerva Hooper", "Curaçao", "Sinaai-Waas", "$23,789"],
+    data: ["05/27/21", "14:03:02", "-$13.00", "$11.00"],
   },
   {
     className: "table-info",
-    data: ["Sage Rodriguez", "Netherlands", "Baileux", "$56,142"],
+    data: ["05/27/21", "10:05:08", "-$4.00", "$24.00"],
   },
   {
     className: "",
-    data: ["Philip Chaney", "Korea, South", "Overland Park", "$38,735"],
+    data: ["05/27/21", "9:59:59", "+$20.00", "$28.00"],
   },
   {
     className: "table-danger",
-    data: ["Doris Greene", "Malawi", "Feldkirchen in Kärnten", "$63,542"],
+    data: ["05/26/21", "17:38:39", "-$7.00", "$8.00"],
   },
-  { className: "", data: ["Mason Porter", "Chile", "Gloucester", "$78,615"] },
+  { 
+    className: "", 
+    data: ["05/26/21", "13:29:59", "+$5.00", "$15.00"] },
   {
     className: "table-warning",
-    data: ["Jon Porter", "Portugal", "Gloucester", "$98,615"],
+    data: ["05/26/21", "08:00:00", "+$10.00", "$10.00"],
   },
 ];
 
