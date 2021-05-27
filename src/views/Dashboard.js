@@ -162,8 +162,8 @@ function Dashboard() {
               </CardFooter>
             </Card>
           </Col> */}
-          <Col></Col>
-          <Col xs = {12} md = {5} align = "center">
+          <Col md = {4}></Col>
+          <Col xs = {12} md = {4} align = "center">
             <Card className = "Progress Bar" >
                 <CircularProgressbar
                     value={90}
@@ -198,7 +198,7 @@ function Dashboard() {
                 </CardFooter>
               </Card>
           </Col>
-          <Col></Col>
+          <Col md = {6}></Col>
           {/* <Col xs={12} md={4}>
             <Card className="card-chart">
               <CardHeader>
