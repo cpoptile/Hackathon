@@ -451,34 +451,34 @@ function Dashboard() {
                   </thead>
                   <tbody>
                     <tr>
-                      <td>Dakota Rice</td>
-                      <td>Niger</td>
-                      <td>Oud-Turnhout</td>
-                      <td className="text-right">$36,738</td>
+                      <td>05/28/21</td>
+                      <td>00:00:00</td>
+                      <td>+$10.00</td>
+                      <td className="text-right">$21.00</td>
                     </tr>
                     <tr>
-                      <td>Minerva Hooper</td>
-                      <td>Curaçao</td>
-                      <td>Sinaai-Waas</td>
-                      <td className="text-right">$23,789</td>
+                      <td>05/27/21</td>
+                      <td>14:03:02</td>
+                      <td>-$13.00</td>
+                      <td className="text-right">$11.00</td>
                     </tr>
                     <tr>
-                      <td>Sage Rodriguez</td>
-                      <td>Netherlands</td>
-                      <td>Baileux</td>
-                      <td className="text-right">$56,142</td>
+                      <td>05/27/21</td>
+                      <td>10:05:08</td>
+                      <td>-$4.00</td>
+                      <td className="text-right">$24.00</td>
                     </tr>
                     <tr>
-                      <td>Doris Greene</td>
-                      <td>Malawi</td>
-                      <td>Feldkirchen in Kärnten</td>
-                      <td className="text-right">$63,542</td>
+                      <td>05/27/21</td>
+                      <td>09:59:59</td>
+                      <td>+$20.00</td>
+                      <td className="text-right">$28.00</td>
                     </tr>
                     <tr>
-                      <td>Mason Porter</td>
-                      <td>Chile</td>
-                      <td>Gloucester</td>
-                      <td className="text-right">$78,615</td>
+                      <td>05/26/21</td>
+                      <td>17:38:39</td>
+                      <td>-$7.00</td>
+                      <td className="text-right">$8.00</td>
                     </tr>
                   </tbody>
                 </Table>
