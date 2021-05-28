@@ -20,22 +20,25 @@ import PanelHeader from "components/PanelHeader/PanelHeader.js";
 
 
 function UpdatePage() {
-    const [balance, setBalance] = useState("0")
-    const [amount, setAmount] = useState("")
+    const [balance, setBalance] = useState("0");
+    const [amount, setAmount] = useState("");
     const [display, setDisplay] = useState(false);
+    const [total, setTotal] = useState(balance + amount);
 
     // const customData = require('./customData.json');
 
     function addFunds(e){
         e.preventDefault()
-        setBalance(balance + amount)
-        // setBalance(toString(parseInt(balance) + parseInt(amount)))
+        //setTotal(balance + amount)
+        setTotal(parseFloat(balance) + parseFloat(amount))
+        setBalance(parseFloat(total))
     }
     
     function subtractFunds(e){
         e.preventDefault()
-        setBalance(balance - amount)
-        // setBalance(parseInt(balance) + parseInt(amount))
+        //setTotal(balance - (-1*amount))
+        setTotal(parseFloat(balance) + (-1*parseFloat(amount)))
+        setBalance(parseFloat(total))
     }
 
   return (
