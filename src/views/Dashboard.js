@@ -96,7 +96,7 @@ function Dashboard() {
                 {/* THE PROGRESS BAR */}
                 <CircularProgressbar
                     value={90}
-                    text={`${90}%`}
+                    text={`${900}`}
                     styles={buildStyles({
                       // Rotation of path and trail, in number of turns (0-1)
                       rotation: 0.25,
