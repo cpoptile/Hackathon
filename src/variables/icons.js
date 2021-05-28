@@ -16,6 +16,7 @@
 
 */
 const icons = [
+  "walrus",
   "arrows-1_cloud-download-93",
   "arrows-1_cloud-upload-94",
   "arrows-1_minimal-down",
