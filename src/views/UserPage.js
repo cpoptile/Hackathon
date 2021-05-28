@@ -17,6 +17,7 @@
 */
 import React from "react";
 
+
 // reactstrap components
 import {
   Button,
@@ -28,6 +29,7 @@ import {
   Input,
   Row,
   Col,
+  Table,
 } from "reactstrap";
 
 // core components
@@ -173,17 +175,18 @@ function User() {
                     />
                     <h5 className="title">Mike Andrew</h5>
                   </a>
-                  <p className="description">michael24</p>
+                  {/* <p className="description">michael24</p> */}
                 </div>
                 <p className="description text-center">
-                  "Lamborghini Mercy <br />
-                  Your chick she so thirsty <br />
-                  I'm in that two seat Lambo"
+                  DISPLAY BADGES HERE
                 </p>
+                <Table>
+                  
+                </Table>
               </CardBody>
               <hr />
               <div className="button-container">
-                <Button
+                {/* <Button
                   className="btn-neutral btn-icon btn-round"
                   color="default"
                   href="#pablo"
@@ -209,7 +212,7 @@ function User() {
                   size="lg"
                 >
                   <i className="fab fa-google-plus-g" />
-                </Button>
+                </Button> */}
               </div>
             </Card>
           </Col>
