@@ -82,16 +82,16 @@ function Dashboard() {
         <Col xs = {1}></Col>
         <Col>
           <Card>
+            <Row>
+            <Col>
             <CardHeader>
               <h1 className = "total-label"> Current Balance </h1>
             </CardHeader>
             <CardBody>
               <h2 className = "total-amount">$700.00</h2>
             </CardBody>
-          </Card>
-        </Col>
-        <Col xs = {4} md = {2} align = "center">
-            <Card className = "Progress Bar" >
+            </Col>
+            <Col xs = {4} md = {3}>
               {/*
                 {/* THE PROGRESS BAR */}
                 <CircularProgressbar
@@ -120,9 +120,11 @@ function Dashboard() {
                       backgroundColor: '#3e98c7',
                     })}
                   />
-              </Card>
-          </Col>
-          <Col xs = {1}></Col>
+            </Col>
+            </Row>
+          </Card>
+        </Col>
+        <Col xs = {1}></Col>
 
         </Row>
         //   <Line
