@@ -138,7 +138,7 @@ var gradientChartOptionsConfigurationWithNumbersAndGrid = {
 const dashboardPanelChart = {
   data: (canvas) => {
     const ctx = canvas.getContext("2d");
-    var chartColor = "#FFFFFF";
+    var chartColor = "#21130d";
     var gradientStroke = ctx.createLinearGradient(500, 0, 100, 0);
     gradientStroke.addColorStop(0, "#80b6f4");
     gradientStroke.addColorStop(1, chartColor);

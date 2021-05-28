@@ -15,7 +15,7 @@
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
 */
-import React from "react";
+import React, {useState} from "react";
 // react plugin used to create charts
 import { Line, Bar } from "react-chartjs-2";
 import { CircularProgressbar, buildStyles } from 'react-circular-progressbar';
@@ -53,6 +53,11 @@ import {
 } from "variables/charts.js";
 
 function Dashboard() {
+  const [balance, setBalance] = useState("0")
+  const [amount, setAmount] = useState("")
+  const [display, setDisplay] = useState(false);
+
+
   return (
     <>
       {/* <Row>
@@ -65,17 +70,17 @@ function Dashboard() {
             </CardBody>
           </Card>
         </Row> */}
+
+      {/*THE TOP DARK GREY HEADER */}
       <PanelHeader
         size="lg"
         content={
-          <Line
-            data={dashboardPanelChart.data}
-            options={dashboardPanelChart.options}
-          />
-        }
-      />
-      <div className="content">
+        //   <div>
+        //   <Row>
+        //   {/* THE CARD DISPLAYING CURRENT BALANCE  */}
         <Row>
+        <Col xs = {1}></Col>
+        <Col>
           <Card>
             <CardHeader>
               <h1 className = "total-label"> Current Balance </h1>
@@ -84,7 +89,84 @@ function Dashboard() {
               <h2 className = "total-amount">$700.00</h2>
             </CardBody>
           </Card>
+        </Col>
+        <Col xs = {4} md = {2} align = "center">
+            <Card className = "Progress Bar" >
+              {/*
+                {/* THE PROGRESS BAR */}
+                <CircularProgressbar
+                    value={90}
+                    text={`${90}%`}
+                    styles={buildStyles({
+                      // Rotation of path and trail, in number of turns (0-1)
+                      rotation: 0.25,
+
+                      // Whether to use rounded or flat corners on the ends - can use 'butt' or 'round'
+                      strokeLinecap: 'butt',
+
+                      // Text size
+                      textSize: '16px',
+
+                      // How long animation takes to go from one percentage to another, in seconds
+                      pathTransitionDuration: 0.5,
+
+                      // Can specify path transition in more detail, or remove it entirely
+                      // pathTransition: 'none',
+
+                      // Colors
+                      pathColor: `rgba(62, 152, 199, ${90 / 100})`,
+                      textColor: '#f88',
+                      trailColor: '#d6d6d6',
+                      backgroundColor: '#3e98c7',
+                    })}
+                  />
+              </Card>
+          </Col>
+          <Col xs = {1}></Col>
+
         </Row>
+        //   <Line
+        //     data={dashboardPanelChart.data}
+        //     options={dashboardPanelChart.options}
+        //   />
+        //   </div>
+        }
+      />
+      <div className="content">
+        <Row>
+          <Col>
+          <Card className="card-chart">
+              <CardHeader>
+                <h5 className="card-category">Global Sales</h5>
+                <CardTitle tag="h4">Point history</CardTitle>
+              </CardHeader>
+              <CardBody>
+                <div className="chart-area">
+                <Line
+                    data={dashboardPanelChart.data}
+                    options={dashboardPanelChart.options}
+                  />
+                </div>
+              </CardBody>
+              <CardFooter>
+                <div className="stats">
+                  <i className="now-ui-icons arrows-1_refresh-69" /> Just
+                  Updated
+                </div>
+              </CardFooter>
+            </Card>
+            </Col>
+        </Row>
+        {/* <Row>
+          <Card>
+            <CardHeader>
+              <h1 className = "total-label"> Current Balance </h1>
+            </CardHeader>
+            <CardBody>
+              <h2 className = "total-amount">$700.00</h2>
+            </CardBody>
+          </Card>
+        </Row> */}
         <Row>
           {/* <Col xs={12} md={4}> */}
             {/* <Card className="card-chart">
@@ -162,41 +244,10 @@ function Dashboard() {
               </CardFooter>
             </Card>
           </Col> */}
-          <Col md = {4}></Col>
-          <Col xs = {12} md = {4} align = "center">
-            <Card className = "Progress Bar" >
-                <CircularProgressbar
-                    value={90}
-                    text={`${90}%`}
-                    styles={buildStyles({
-                      // Rotation of path and trail, in number of turns (0-1)
-                      rotation: 0.25,
-
-                      // Whether to use rounded or flat corners on the ends - can use 'butt' or 'round'
-                      strokeLinecap: 'butt',
-
-                      // Text size
-                      textSize: '16px',
-
-                      // How long animation takes to go from one percentage to another, in seconds
-                      pathTransitionDuration: 0.5,
-
-                      // Can specify path transition in more detail, or remove it entirely
-                      // pathTransition: 'none',
-
-                      // Colors
-                      pathColor: `rgba(62, 152, 199, ${90 / 100})`,
-                      textColor: '#f88',
-                      trailColor: '#d6d6d6',
-                      backgroundColor: '#3e98c7',
-                    })}
-                  />
-                <CardFooter>
-                  <div className="stats">
-                    <i className="now-ui-icons arrows-1_refresh-69" /> Updates --
-                  </div>
-                </CardFooter>
-              </Card>
+          {/* NEEDED TO CENTER THE PROGRESS BAR*/}
+          <Col xs = {3} md = {4}></Col>
+          <Col xs = {6} md = {4} align = "center">
+            
           </Col>
           <Col md = {4}></Col>
           {/* <Col xs={12} md={4}>
@@ -386,6 +437,7 @@ function Dashboard() {
                 <CardTitle tag="h4">Recent Transactions</CardTitle>
               </CardHeader>
               <CardBody>
+                {/* THE TRANSACTION TABLE */}
                 <Table responsive>
                   <thead className="text-primary">
                     <tr>
