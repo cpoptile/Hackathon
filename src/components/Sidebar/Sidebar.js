@@ -62,7 +62,7 @@ function Sidebar(props) {
           className="simple-text logo-normal"
           target="_blank"
         >
-          INSERT APP NAME
+          Future Finance
         </a>
       </div>
       <div className="sidebar-wrapper" ref={sidebar}>

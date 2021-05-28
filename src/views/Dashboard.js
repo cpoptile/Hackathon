@@ -139,7 +139,7 @@ function Dashboard() {
           <Col>
           <Card className="card-chart">
               <CardHeader>
-                <h5 className="card-category">Global Sales</h5>
+                <h5 className="card-category">Point Standing</h5>
                 <CardTitle tag="h4">Point history</CardTitle>
               </CardHeader>
               <CardBody>
