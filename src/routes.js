@@ -75,13 +75,13 @@ var dashRoutes = [
   //   component: Maps,
   //   layout: "/admin",
   // },
-  {
-    path: "/icons",
-    name: "Icons - WILL DELETE LATER",
-    icon: "design_image",
-    component: Icons,
-    layout: "/admin",
-  },
+  // {
+  //   path: "/icons",
+  //   name: "Icons - WILL DELETE LATER",
+  //   icon: "design_image",
+  //   component: Icons,
+  //   layout: "/admin",
+  // },
   // {
   //   pro: true,
   //   path: "/upgrade",

@@ -20,7 +20,7 @@ import PanelHeader from "components/PanelHeader/PanelHeader.js";
 
 
 function UpdatePage() {
-    const [balance, setBalance] = useState("0");
+    const [balance, setBalance] = useState("700");
     const [amount, setAmount] = useState("");
     const [display, setDisplay] = useState(false);
     const [total, setTotal] = useState(balance + amount);
@@ -64,15 +64,15 @@ function UpdatePage() {
             </Col>
         </Row>
         <Row>
-            <Col>
-                <Card>
+            <Col xs = {6} md = {6} >
+                {/* <Card> */}
                 <Button color="info" type="button" onClick ={addFunds} >DEPOSIT</Button>
-                </Card>
+                {/* </Card> */}
             </Col>
-            <Col>
-                <Card>
+            <Col xs = {6 } md = {6}>
+                {/* <Card> */}
                     <Button color="info" type="button" onClick ={subtractFunds} >WITHDRAW</Button>
-                </Card>
+                {/* </Card> */}
             </Col>
         </Row>      
     </div>
